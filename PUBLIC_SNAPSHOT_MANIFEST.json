@@ -1,0 +1,50 @@
+{
+  "schema_version": "hypertrader-public-snapshot-manifest-v1",
+  "created_on": "2026-08-28",
+  "repository": "springtiming/hypertrader-research-platform",
+  "snapshot_type": "clean-room-no-history",
+  "private_repository_files_copied": false,
+  "private_git_history_copied": false,
+  "committed_data_classification": "synthetic-only",
+  "execution_capability": "none",
+  "included_components": [
+    {
+      "path": "src/hypertrader_research",
+      "origin": "new-clean-room-implementation",
+      "classification": "public-source"
+    },
+    {
+      "path": "tests",
+      "origin": "new-clean-room-tests",
+      "classification": "public-synthetic"
+    },
+    {
+      "path": "examples/synthetic_report.json",
+      "origin": "deterministic-generated-output",
+      "classification": "public-synthetic"
+    },
+    {
+      "path": "docs",
+      "origin": "new-public-documentation",
+      "classification": "public-documentation"
+    }
+  ],
+  "excluded_categories": [
+    "credentials-and-environment-files",
+    "real-market-account-and-trade-data",
+    "private-strategies-and-candidate-parameters",
+    "research-artifacts-and-historical-results",
+    "registry-object-storage-and-database-bindings",
+    "exchange-wallet-and-order-execution",
+    "deployment-and-internal-infrastructure",
+    "private-issues-pull-requests-actions-and-git-history",
+    "third-party-visual-assets-and-brand-logos"
+  ],
+  "claims": {
+    "validated_alpha": false,
+    "paper_ready": false,
+    "live_ready": false,
+    "profitability": false,
+    "investment_advice": false
+  }
+}

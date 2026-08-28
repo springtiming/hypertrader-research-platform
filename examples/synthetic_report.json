@@ -1,0 +1,87 @@
+{
+  "cscv_pbo": {
+    "mean_logit": 1.3705121682939836,
+    "overfit_split_count": 18,
+    "partition_count": 8,
+    "probability": 0.2571428571428571,
+    "split_count": 70
+  },
+  "deflated_sharpe": {
+    "effective_trial_count": 10.0,
+    "expected_maximum_periodic_sharpe": 0.08736752584441829,
+    "probability": 0.5752270614339455,
+    "selected_annualized_sharpe": 1.5202009508463965,
+    "selected_index": 3
+  },
+  "evidence_gate": {
+    "alpha_validated": false,
+    "authorizes_live_trading": false,
+    "authorizes_paper_trading": false,
+    "checks": [
+      {
+        "comparison": "greater_than_or_equal",
+        "name": "observation_count",
+        "observed": 512.0,
+        "passed": true,
+        "threshold": 252.0
+      },
+      {
+        "comparison": "greater_than_or_equal",
+        "name": "deflated_sharpe_probability",
+        "observed": 0.5752270614339455,
+        "passed": false,
+        "threshold": 0.95
+      },
+      {
+        "comparison": "less_than_or_equal",
+        "name": "probability_of_backtest_overfitting",
+        "observed": 0.2571428571428571,
+        "passed": true,
+        "threshold": 0.5
+      },
+      {
+        "comparison": "less_than_or_equal",
+        "name": "maximum_drawdown",
+        "observed": 0.1101773448414749,
+        "passed": true,
+        "threshold": 0.3
+      }
+    ],
+    "eligible_for_further_research": false
+  },
+  "experiment": {
+    "candidate_labels": [
+      "momentum_2",
+      "momentum_4",
+      "momentum_8",
+      "momentum_16",
+      "momentum_32",
+      "contrarian_2",
+      "contrarian_4",
+      "contrarian_8",
+      "contrarian_16",
+      "contrarian_32"
+    ],
+    "cost_bps_per_unit_turnover": 2.0,
+    "full_entry_exit_cost_bps": 4.0,
+    "observation_count": 512,
+    "seed": 7,
+    "selected_candidate": "momentum_16",
+    "trial_count": 10
+  },
+  "interpretation": "Passing this illustrative gate only permits further research. It does not validate alpha or authorize paper or live trading.",
+  "schema_version": "hypertrader-synthetic-report-v1",
+  "scope": {
+    "alpha_validated": false,
+    "live_trading_supported": false,
+    "paper_trading_supported": false,
+    "synthetic_data_only": true
+  },
+  "selected_performance": {
+    "annualized_return": 0.18879399945051945,
+    "annualized_volatility": 0.11852322581129027,
+    "max_drawdown": 0.1101773448414749,
+    "sharpe_ratio": 1.518715654008272,
+    "total_return": 0.4210113448799946
+  }
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "HyperTrader Research Platform"
+type: software
+authors:
+  - family-names: "Fu"
+    given-names: "Yinghua"
+repository-code: "https://github.com/springtiming/hypertrader-research-platform"
+url: "https://github.com/springtiming/hypertrader-research-platform"
+version: 0.1.0
+date-released: 2026-08-28
+license: MIT
